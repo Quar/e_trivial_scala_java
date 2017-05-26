@@ -9,7 +9,9 @@ class HelloWorld {
 
         SayHi$.MODULE$.say(Student.apply("Oculus Rift"));
 
-        SayHi$.MODULE$.say(new Human(){}); // instance of anonymous class inherit interface Human
+        SayHi$.MODULE$.say(new AnonymousHuman(){}); // instance of anonymous class inherit interface AnonymousHuman
+
+        SayHi$.MODULE$.say(() -> "Holographics"); // lambda expression
 
     }
 

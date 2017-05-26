@@ -1,6 +1,9 @@
-// boilerplate to show why case class is a good idea
-interface Human {
-    default public String getName() {
-        return "<anonymous>";
-    };
+public interface Human {
+    String name();
+    default String getName() {
+        if (name() == null) 
+            return "<anonymous>";
+        else
+            return name();
+    }
 }

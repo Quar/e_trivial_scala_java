@@ -1,1 +1,3 @@
-scalaVersion := "2.12.2" // not needed but recommended
+scalaVersion := "2.12.2"
+
+mainClass in (Compile, run) := Some("HelloWorld")
